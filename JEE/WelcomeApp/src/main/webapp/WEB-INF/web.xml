@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>WelcomeApp</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>welcome.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet-mapping>
+  	<servlet-name>wsf</servlet-name>
+  	<url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>ssf</servlet-name>
+  	<url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>tsf</servlet-name>
+  	<url-pattern>/third</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>wsf</servlet-name>
+  	<servlet-class>com.servlet.WelcomeServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>ssf</servlet-name>
+  	<servlet-class>com.servlet.SecondServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>tsf</servlet-name>
+  	<servlet-class>com.servlet.ThirdServlet</servlet-class>
+   </servlet>
+
+
+</web-app>
