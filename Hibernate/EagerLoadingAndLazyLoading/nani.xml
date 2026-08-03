@@ -1,0 +1,9 @@
+Hibernate: 
+    select
+        tl1_0.tlId,
+        tl1_0.name 
+    from
+        team_leader tl1_0 
+    where
+        tl1_0.tlId=?
+1 Raju
