@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "jt" class = "com.ioc.classes.JavaTrainer">
+    		<property name = "name" value="Kshitij"></property>
+    		<property name = "message" value="says do practice everyday"></property>
+    		<property name = "jpt" ref="jpt"></property>
+    </bean>
+    <bean id = "st" class = "com.ioc.classes.SQLTrainer">
+    		<property name = "name" value="Blesina"></property>
+    		<property name = "message" value="says practice complex queires"></property>
+    		<property name = "spt" ref="spt"></property>
+    </bean>
+    <bean id = "wt" class = "com.ioc.classes.WebTrainer">
+    		<property name = "name" value="Harsit"></property>
+    		<property name = "message" value="says create web applications"></property>
+    		<property name = "wpt" ref="wpt"></property>
+    </bean>
+    
+    
+	<bean id = "jpt" class = "com.ioc.classes.JavaPracticeTime">
+		<constructor-arg name="time" value= "2 hours"></constructor-arg>
+	</bean>
+	<bean id = "spt" class = "com.ioc.classes.SQLPracticeTime">
+		<constructor-arg name="time" value= "1.5 hours"></constructor-arg>
+	</bean>
+	<bean id = "wpt" class = "com.ioc.classes.WebPracticeTime">
+		<constructor-arg name="time" value= "1 hours"></constructor-arg>
+	</bean>
+</beans>
